@@ -1,0 +1,106 @@
+/* General Body Styles */
+/* Sesuaikan jika ada konflik dengan layout admin */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark text color */
+}
+
+/* Navbar Enhancements - Ini tidak lagi berlaku untuk navbar utama, tapi mungkin di tempat lain */
+/* .navbar { background-color: #007bff !important; box-shadow: 0 2px 4px rgba(0,0,0,.1); } */
+/* .navbar-brand { font-weight: 700; color: #fff !important; } */
+/* .navbar-nav .nav-link { color: #e9ecef !important; transition: color 0.3s ease; } */
+/* .navbar-nav .nav-link:hover { color: #ffffff !important; text-shadow: 0 0 5px rgba(255,255,255,0.5); } */
+
+
+/* Main Content Area - Ini akan digantikan oleh .content-wrapper */
+/* .container { margin-top: 20px; padding-bottom: 50px; } */
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,.12);
+}
+.card-header {
+    background-color: #f1f3f5;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Table Styles */
+.table-responsive {
+    margin-top: 20px;
+}
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.table thead th {
+    background-color: #6c757d; /* Dark gray for table header */
+    color: #fff;
+    border-bottom: none;
+}
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: 0; /* Penting untuk menghilangkan outline default browser */
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+    transform: translateY(-1px);
+}
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    transform: translateY(-1px);
+}
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+    transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* .navbar-brand { font-size: 1.2em; } */
+    .card {
+        margin-bottom: 20px;
+    }
+}

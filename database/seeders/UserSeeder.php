@@ -1,0 +1,26 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+
+class UserSeeder extends Seeder
+{
+    public function run()
+    {
+        User::create([
+            'full_name' => 'Administrator Perpustakaan',
+            'nama_user' => 'admin',
+            'password' => Hash::make('password'), // Password untuk login
+            'role' => 'admin',
+        ]);
+        User::create([
+            'full_name' => 'Anggota Perpustakaan',
+            'nama_user' => 'anggota',
+            'password' => Hash::make('password'),
+            'role' => 'anggota',
+        ]);
+    }
+}
