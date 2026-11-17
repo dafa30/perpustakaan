@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
             'role' => 'admin',
         ]);
         User::create([
-            'full_name' => 'Anggota Perpustakaan',
+            'full_name' => 'Anggota Perpus',
             'nama_user' => 'anggota',
             'password' => Hash::make('password'),
             'role' => 'anggota',
